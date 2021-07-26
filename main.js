@@ -168,6 +168,7 @@ class Pedro {
         const playerX = Game.player.getX()
         const playerY = Game.player.getY()
         function passableCallback(x, y) {
+            // callback checks if there is a floor tile in Game.map, return true
             return `${x},${y}` in Game.map
         }
 
